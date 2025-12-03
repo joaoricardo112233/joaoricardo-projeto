@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Revoluções — Portal da História</title>
+  <style>
+    /* Estilo embutido — consistente com o restante do site */
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --accent:#d64545; /* tom enérgico para revoluções */
+      --accent-2:#2c3e50;
+      --muted:#63707a;
+      --shadow: 0 10px 28px rgba(30,40,60,0.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#0f1724;background:var(--bg);line-height:1.6}
+    header{background:linear-gradient(90deg,var(--accent),#a33232);color:#fff;padding:36px 20px;text-align:center}
+    header h1{margin:0;font-size:clamp(20px,3vw,32px)}
+    header p{margin:8px 0 0;opacity:0.95}
+    nav{display:flex;gap:12px;justify-content:center;padding:14px;background:#ffffff;border-bottom:1px solid rgba(15,23,36,0.04)}
+    nav a{color:var(--accent-2);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px}
+    nav a:hover{background:rgba(210,69,69,0.08)}
+    .container{max-width:1100px;margin:28px auto;padding:0 18px}
+    .intro{display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:start}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
+    .lead{font-size:17px;color:#122031}
+    .aside img{width:100%;border-radius:10px;display:block}
+    h2{color:var(--accent-2);margin-top:0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+    .media{display:flex;gap:14px}
+    .media img{width:140px;height:100px;object-fit:cover;border-radius:8px;flex-shrink:0}
+    .caption{font-size:13px;color:var(--muted);margin-top:8px}
+    ul{padding-left:20px}
+    footer{margin:46px 0 20px;text-align:center;color:var(--muted)}
+    a.button{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;border-radius:10px;text-decoration:none;font-weight:600}
+    @media (max-width:900px){
+      .intro{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .media img{width:110px;height:78px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Revoluções</h1>
+    <p>Movimentos que transformaram sociedades, políticas e economias — do século XVIII ao XIX e além.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="conteudo.html">Voltar ao Conteúdo</a>
+  </nav>
+
+  <main class="container">
+    <section class="intro">
+      <article class="card">
+        <h2>Visão Geral</h2>
+        <p class="lead">Uma revolução é uma mudança profunda e rápida nas estruturas políticas, sociais e econômicas. As revoluções modernas (como a Americana, a Francesa e a Industrial) moldaram o mundo contemporâneo: alteraram poderes, direitos e modos de produção.</p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Revolução Americana (1775–1783)</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Declaration_independence.jpg" alt="Declaração de Independência" />
+              <div>
+                <p>Colônias britannicas na América lutaram pela independência, resultando na criação dos Estados Unidos. Questões como representação e taxation sem representação foram centrais.</p>
+                <p class="caption">Imagem: Declaração de Independência — Wikimedia Commons (reprodução histórica).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Revolução Francesa (1789–1799)</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Prise_de_la_Bastille.jpg" alt="Queda da Bastilha" />
+              <div>
+                <p>Uma série de eventos que derrubaram a monarquia absolutista, promoveram ideias de igualdade e liberdade e provocaram profundas reformas e violência política.</p>
+                <p class="caption">Imagem: Queda da Bastilha — pintura histórica (Wikimedia Commons).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Revolução Industrial (séculos XVIII–XIX)</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Spinning_jenny_Hargreaves.jpg" alt="Máquina industrial" />
+              <div>
+                <p>Mudanças na produção com máquinas, fábricas e novas fontes de energia (vapor) transformaram economias agrárias em industriais, alterando trabalho, urbanização e tecnologia.</p>
+                <p class="caption">Imagem: Máquina têxtil — Wikimedia Commons (ilustração histórica).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Outras Revoluções</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/1917_Russian_Revolution.jpg" alt="Revolução Russa" />
+              <div>
+                <p>Movimentos como a Revolução Russa (1917), independências latino-americanas e as revoluções de 1848 também foram marcos que mudaram decisivamente regiões inteiras.</p>
+                <p class="caption">Imagem: Revolução Russa — Wikimedia Commons (fotografia histórica).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <aside class="aside card">
+        <h3>Fatos Rápidos</h3>
+        <ul>
+          <li>Revoluções combinam causas econômicas, políticas e sociais.</li>
+          <li>A imprensa e a circulação de ideias facilitaram a organização e o debate público.</li>
+          <li>Algumas revoluções resultaram em repúblicas; outras em regimes autoritários.</li>
+        </ul>
+
+        <h3 style="margin-top:18px">Consequências</h3>
+        <p class="caption">Direitos civis, mudanças na propriedade, industrialização e novas formas de Estado são algumas das consequências duradouras das revoluções modernas.</p>
+
+        <figure style="margin-top:16px">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Liberty_leading_the_people.jpg" alt="La Liberté guidant le peuple" style="width:100%;border-radius:8px;" />
+          <figcaption class="caption">"La Liberté guidant le peuple" — Eugène Delacroix (representação simbólica da revolução francesa).</figcaption>
+        </figure>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <h2>Artigos recomendados</h2>
+      <p>Leia páginas dedicadas:</p>
+      <ul>
+        <li><a href="revolucao_americana.html">Revolução Americana — independência e constituição</a></li>
+        <li><a href="revolucao_francesa.html">Revolução Francesa — causas e fases</a></li>
+        <li><a href="revolucao_industrial.html">Revolução Industrial — inovação e impacto social</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Imagens: Wikimedia Commons. Verifique licenças específicas nas páginas originais das imagens.</p>
+      <p>© 2025 — Portal da História</p>
+    </footer>
+  </main>
+</body>
+</html>

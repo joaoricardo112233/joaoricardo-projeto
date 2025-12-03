@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Idade Média — Portal da História</title>
+  <style>
+    /* Estilo imbutido — coerente com civilizacoes_antigas */
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#8B5E3C; /* tom antigo, pergaminho */
+      --muted:#55606a;
+      --shadow: 0 8px 28px rgba(40,50,90,0.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#102a43;background:var(--bg);line-height:1.6}
+    header{background:linear-gradient(90deg,var(--accent),#5a3926);color:#fff;padding:36px 20px;text-align:center}
+    header h1{margin:0;font-size:clamp(20px,3vw,32px)}
+    header p{margin:8px 0 0;opacity:0.95}
+    nav{display:flex;gap:12px;justify-content:center;padding:14px;background:#ffffff;border-bottom:1px solid rgba(16,42,67,0.04)}
+    nav a{color:var(--accent);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px}
+    nav a:hover{background:rgba(139,94,60,0.08)}
+    .container{max-width:1100px;margin:28px auto;padding:0 18px}
+    .intro{display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:start}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
+    .lead{font-size:17px;color:#16324a}
+    .aside img{width:100%;border-radius:10px;display:block}
+    h2{color:#123;margin-top:0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+    .media{display:flex;gap:14px}
+    .media img{width:140px;height:100px;object-fit:cover;border-radius:8px;flex-shrink:0}
+    .caption{font-size:13px;color:var(--muted);margin-top:8px}
+    ul{padding-left:20px}
+    footer{margin:46px 0 20px;text-align:center;color:var(--muted)}
+    @media (max-width:900px){
+      .intro{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .media img{width:110px;height:78px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Idade Média</h1>
+    <p>Do final do Império Romano ao início da Era Moderna — um período complexo de feudos, castelos, Igrejas poderosas e profundas transformações.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="conteudo.html">Voltar ao Conteúdo</a>
+  </nav>
+
+  <main class="container">
+    <section class="intro">
+      <article class="card">
+        <h2>Visão Geral</h2>
+        <p class="lead">A Idade Média (aprox. séc. V ao XV) é frequentemente dividida em Alta Idade Média e Baixa Idade Média. Foi marcada pelo sistema feudal, pela forte influência da Igreja Católica na Europa, pelas Cruzadas, pelo florescimento de monarquias e, mais tarde, por transformações que levariam ao Renascimento.</p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Feudalismo</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Feudal_lord_and_vassal.jpg" alt="Relação feudal" />
+              <div>
+                <p>O feudalismo organizava a sociedade em torno da posse de terra: senhores, vassalos e servos. A economia era local e baseada em agricultura.</p>
+                <p class="caption">Imagem ilustrativa: representação de laços feudais — Wikimedia Commons.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Castelos e Fortificações</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Conwy_Castle_from_the_west_%28geograph_2301072%29.jpg" alt="Castelo medieval" />
+              <div>
+                <p>Castelos eram centros militares e administrativos; sua arquitetura evoluiu para resistir a cercos e afirmar poder regional.</p>
+                <p class="caption">Imagem: Castelo de Conwy, País de Gales — Wikimedia Commons.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Igreja e Sociedade</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Chartres_cathedral.jpg" alt="Catedral de Chartres" />
+              <div>
+                <p>A Igreja Católica possuía grande influência política e cultural: catedrais, monastérios e ordens religiosas foram centros de saber e poder.</p>
+                <p class="caption">Imagem: Catedral de Chartres — Wikimedia Commons (uso licenciado).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Cruzadas e Contatos</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Crusader_knight.jpg" alt="Cruzadas" />
+              <div>
+                <p>As Cruzadas (séc. XI–XIII) foram expedições militares motivadas por motivos religiosos e políticos, que aumentaram o contato entre Europa e Oriente, influenciando comércio e cultura.</p>
+                <p class="caption">Imagem: cavaleiro cruzado — Wikimedia Commons (ilustração histórica).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <aside class="aside card">
+        <h3>Fatos Rápidos</h3>
+        <ul>
+          <li>A Peste Negra (séc. XIV) reduziu drasticamente a população europeia.</li>
+          <li>As universidades europeias surgiram na Baixa Idade Média (ex.: Bolonha, Paris).</li>
+          <li>O comércio e as cidades se recuperaram e cresceram no final da Idade Média.</li>
+        </ul>
+
+        <h3 style="margin-top:18px">Legado</h3>
+        <p class="caption">A transição para a modernidade incluiu maior urbanização, desenvolvimento de estados centralizados, avanço científico e mudanças econômicas que prepararam o terreno para o Renascimento.</p>
+
+        <figure style="margin-top:16px">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Medieval_market.jpg" alt="Mercado medieval" style="width:100%;border-radius:8px;" />
+          <figcaption class="caption">Mercado medieval — cena que simboliza o renascimento do comércio urbano.</figcaption>
+        </figure>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <h2>Artigos recomendados</h2>
+      <p>Para se aprofundar, escolha uma subpágina:</p>
+      <ul>
+        <li><a href="idademedia_feudalismo.html">Feudalismo — estrutura social e econômica</a></li>
+        <li><a href="idademedia_igreja.html">A Igreja na Idade Média — poder e cultura</a></li>
+        <li><a href="idademedia_peste.html">Peste Negra — causas e consequências</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Imagens: Wikimedia Commons. Verifique licenças nas páginas originais.</p>
+      <p>© 2025 — Portal da História</p>
+    </footer>
+  </main>
+</body>
+</html>

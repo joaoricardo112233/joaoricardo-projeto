@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Civilizações Antigas — Portal da História</title>
+  <style>
+    /* Estilo imbutido — moderno e responsivo */
+    :root{
+      --bg:#f4f7fb;
+      --card:#ffffff;
+      --accent:#4A90E2;
+      --muted:#6b7280;
+      --shadow: 0 8px 30px rgba(40,50,90,0.08);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#102a43;background:var(--bg);line-height:1.6}
+    header{background:linear-gradient(90deg,var(--accent),#2c3e50);color:#fff;padding:36px 20px;text-align:center}
+    header h1{margin:0;font-size:clamp(20px,3vw,32px);letter-spacing:0.4px}
+    header p{margin:8px 0 0;opacity:0.95}
+    nav{display:flex;gap:12px;justify-content:center;padding:14px;background:#ffffff;border-bottom:1px solid rgba(16,42,67,0.06)}
+    nav a{color:var(--accent);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px}
+    nav a:hover{background:rgba(74,144,226,0.08)}
+    .container{max-width:1100px;margin:28px auto;padding:0 18px}
+    .intro{display:grid;grid-template-columns:1fr 380px;gap:22px;align-items:start}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
+    .lead{font-size:18px;color:#16324a}
+    .aside img{width:100%;border-radius:10px;display:block}
+    h2{color:#123; margin-top:0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+    .media{display:flex;gap:14px}
+    .media img{width:140px;height:100px;object-fit:cover;border-radius:8px;flex-shrink:0}
+    .caption{font-size:13px;color:var(--muted);margin-top:8px}
+    ul{padding-left:20px}
+    footer{margin:46px 0 20px;text-align:center;color:var(--muted)}
+    @media (max-width:900px){
+      .intro{grid-template-columns:1fr;}
+      .grid{grid-template-columns:1fr}
+      .media img{width:110px;height:78px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Civilizações Antigas</h1>
+    <p>Uma viagem pelos primeiros centros de poder que moldaram a escrita, a arquitetura e o pensamento ocidental e oriental.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="conteudo.html">Voltar ao Conteúdo</a>
+  </nav>
+
+  <main class="container">
+    <section class="intro">
+      <article class="card">
+        <h2>Visão Geral</h2>
+        <p class="lead">As chamadas "civilizações antigas" — como Mesopotâmia, Egito, Grécia e Roma — deram os primeiros passos organizados da sociedade humana: tiveram cidades, Estado, escrita, leis, monumentos e tradições religiosas complexas. Aqui você encontra um resumo com imagens de referência, fatos importantes e legados duradouros.</p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Mesopotâmia</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Ziggurat_of_Ur.jpg" alt="Zigurate de Ur, Mesopotâmia" />
+              <div>
+                <p>Localizada entre os rios Tigre e Eufrates, Mesopotâmia (atual Iraque e partes da Síria) é berço da escrita cuneiforme e de códigos legais como o de Hamurabi.</p>
+                <p class="caption">Imagem: Zigurate de Ur — Wikimedia Commons (domínio público).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Egito Antigo</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg" alt="Pirâmide de Quéops, Egito" />
+              <div>
+                <p>As margens do Nilo permitiram agricultura produtiva e uma centralização do poder. As pirâmides e a escrita hieroglífica são símbolos duradouros desta cultura.</p>
+                <p class="caption">Imagem: Pirâmide de Quéops — Wikimedia Commons (domínio público).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Grécia Antiga</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Acropolis_of_Athens_2011.jpg" alt="Acrópole de Atenas, Grécia" />
+              <div>
+                <p>Local de nascimento da democracia direta (em Atenas), da filosofia (Sócrates, Platão, Aristóteles) e de avanços em teatro e matemática.</p>
+                <p class="caption">Imagem: Acrópole — Wikimedia Commons (domínio público/uso licenciado).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Roma Antiga</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Roman_Forum_looking_south.jpg" alt="Fórum Romano, Roma" />
+              <div>
+                <p>Roma expandiu um sistema jurídico e administrativo que influenciou grande parte da Europa. As estradas, aquedutos e o direito romano são legados técnicos e jurídicos.</p>
+                <p class="caption">Imagem: Fórum Romano — Wikimedia Commons (domínio público/uso licenciado).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <aside class="aside card">
+        <h3>Fatos Rápidos</h3>
+        <ul>
+          <li>A escrita cuneiforme surgiu por volta de 3200 a.C.</li>
+          <li>As pirâmides do Egito datam de cerca de 2600 a.C.</li>
+          <li>A democracia ateniense floresceu no século V a.C.</li>
+          <li>O Império Romano alcançou seu auge no século II d.C.</li>
+        </ul>
+
+        <h3 style="margin-top:18px">Legado</h3>
+        <p class="caption">Direito, arquitetura, engenharia, agricultura e sistemas de escrita das civilizações antigas continuam presentes em nossa vida moderna — seja nas leis, nas línguas ou nas cidades.</p>
+
+        <figure style="margin-top:16px">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Pharaoh.JPG" alt="Artefato faraônico" style="width:100%;border-radius:8px;" />
+          <figcaption class="caption">Estátua de faraó — exemplificando a arte e a religião no Egito Antigo.</figcaption>
+        </figure>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <h2>Artigos recomendados</h2>
+      <p>Se quiser ler mais a fundo, escolha um dos temas abaixo para uma página dedicada:</p>
+      <ul>
+        <li><a href="civilizacoes_mesopotamia.html">Mesopotâmia — escrita e cidade-estado</a></li>
+        <li><a href="civilizacoes_egito.html">Egito Antigo — faraós e pirâmides</a></li>
+        <li><a href="civilizacoes_grega.html">Grécia Antiga — filosofia e política</a></li>
+        <li><a href="civilizacoes_romana.html">Roma Antiga — direito e engenharia</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Imagens: Wikimedia Commons. Verifique licenças específicas nas páginas originais das imagens.</p>
+      <p>© 2025 — Portal da História</p>
+    </footer>
+  </main>
+</body>
+</html>

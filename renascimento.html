@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Renascimento — Portal da História</title>
+  <style>
+    /* Estilo imbutido — alinhado ao tema do site, cores quentes e elegantes */
+    :root{
+      --bg:#fbfaf7;
+      --card:#ffffff;
+      --accent:#9b4dca; /* roxo elegante */
+      --accent-2:#e1a84b; /* dourado */
+      --muted:#5b6b73;
+      --shadow: 0 10px 30px rgba(50,40,80,0.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#0f1724;background:var(--bg);line-height:1.6}
+    header{background:linear-gradient(90deg,var(--accent),#5b2b8a);color:#fff;padding:36px 20px;text-align:center}
+    header h1{margin:0;font-size:clamp(20px,3vw,32px)}
+    header p{margin:8px 0 0;opacity:0.95}
+    nav{display:flex;gap:12px;justify-content:center;padding:14px;background:#ffffff;border-bottom:1px solid rgba(15,23,36,0.04)}
+    nav a{color:var(--accent);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px}
+    nav a:hover{background:rgba(155,77,202,0.08)}
+    .container{max-width:1100px;margin:28px auto;padding:0 18px}
+    .intro{display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:start}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
+    .lead{font-size:17px;color:#122031}
+    .aside img{width:100%;border-radius:10px;display:block}
+    h2{color:#122031;margin-top:0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+    .media{display:flex;gap:14px}
+    .media img{width:140px;height:100px;object-fit:cover;border-radius:8px;flex-shrink:0}
+    .caption{font-size:13px;color:var(--muted);margin-top:8px}
+    ul{padding-left:20px}
+    footer{margin:46px 0 20px;text-align:center;color:var(--muted)}
+    a.button{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;border-radius:10px;text-decoration:none;font-weight:600}
+    @media (max-width:900px){
+      .intro{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .media img{width:110px;height:78px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Renascimento</h1>
+    <p>Redescoberta do conhecimento clássico, avanços artísticos, científicos e o nascimento do espírito moderno (séc. XIV–XVI).</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="conteudo.html">Voltar ao Conteúdo</a>
+  </nav>
+
+  <main class="container">
+    <section class="intro">
+      <article class="card">
+        <h2>Visão Geral</h2>
+        <p class="lead">O Renascimento foi um movimento cultural que começou na Itália e se espalhou pela Europa. Valorizou a observação direta da natureza, o estudo da antiguidade clássica e incentivou inovações na pintura, escultura, arquitetura, ciência e literatura.</p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Arte e Humanismo</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/The_School_of_Athens_by_Raphael.jpg" alt="A Escola de Atenas, Rafael" />
+              <div>
+                <p>Artistas como Leonardo da Vinci, Michelangelo e Rafael combinaram técnica, perspectiva e estudo anatômico para criar obras que expressavam o potencial humano e a beleza do mundo natural.</p>
+                <p class="caption">Imagem: "A Escola de Atenas" — Rafael, Wikimedia Commons (licença de uso).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Ciência e Observação</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Vitruvian_Man_by_Leonardo_da_Vinci.jpg" alt="Homem Vitruviano, Leonardo da Vinci" />
+              <div>
+                <p>O interesse pela experiência e pela matemática impulsionou avanços em anatomia, astronomia e engenharia. A figura do "polímata" — artista-cientista — caracterizou o período.</p>
+                <p class="caption">Imagem: Homem Vitruviano — Leonardo da Vinci, Wikimedia Commons (domínio público).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Arquitetura</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Florence_Cathedral_Cupola.jpg" alt="Cúpula de Brunelleschi, Florença" />
+              <div>
+                <p>Arquitetos como Brunelleschi e Alberti revisitaram a ordem clássica, criando igrejas, cúpulas e palácios que combinavam harmonia, proporção e inovação técnica.</p>
+                <p class="caption">Imagem: Cúpula de Brunelleschi — Wikimedia Commons (uso licenciado).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Imprensa e Difusão</h3>
+            <div class="media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Gutenberg_Bible%2C_Biblioteca_Nacional_de_Espa%C3%B1a.jpg" alt="Imprensa de Gutenberg" />
+              <div>
+                <p>A invenção da prensa por Gutenberg (c. 1440) facilitou a circulação de livros e ideias, acelerando a alfabetização e a difusão científica e humanística.</p>
+                <p class="caption">Imagem: Bíblia de Gutenberg — Wikimedia Commons (uso licenciado).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <aside class="aside card">
+        <h3>Fatos Rápidos</h3>
+        <ul>
+          <li>O Renascimento floresceu na Itália nos séculos XIV–XVI antes de se espalhar pela Europa.</li>
+          <li>Leonardo, Michelangelo e Rafael são considerados mestres renascentistas.</li>
+          <li>A perspectiva linear revolucionou a pintura, aproximando-a da realidade visual.</li>
+        </ul>
+
+        <h3 style="margin-top:18px">Legado</h3>
+        <p class="caption">O Renascimento ajudou a consolidar o método científico e a cultura humanista, influenciando a arte, a educação e as instituições modernas.</p>
+
+        <figure style="margin-top:16px">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/David_by_Michelangelo.jpg" alt="David de Michelangelo" style="width:100%;border-radius:8px;" />
+          <figcaption class="caption">"David" de Michelangelo — exemplo da escultura renascentista (Wikimedia Commons).</figcaption>
+        </figure>
+
+        <p style="margin-top:14px"><a class="button" href="renascimento_artistas.html">Páginas sobre artistas</a></p>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <h2>Artigos recomendados</h2>
+      <p>Leia páginas dedicadas a temas centrais:</p>
+      <ul>
+        <li><a href="renascimento_leonardo.html">Leonardo da Vinci — vida e obras</a></li>
+        <li><a href="renascimento_michelangelo.html">Michelangelo — escultor e pintor</a></li>
+        <li><a href="renascimento_raphael.html">Rafael — harmonia e composição</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Imagens: Wikimedia Commons. Verifique licenças específicas nas páginas originais das imagens.</p>
+      <p>© 2025 — Portal da História</p>
+    </footer>
+  </main>
+</body>
+</html>

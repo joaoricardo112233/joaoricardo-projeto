@@ -1,44 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Contato - Biologia</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — Portal da História</title>
+  <style>
+    /* CSS embutido para a página de contato */
+    :root{
+      --bg:#f2f6fb;
+      --card:#ffffff;
+      --accent:#4A90E2;
+      --muted:#586173;
+      --shadow: 0 8px 30px rgba(40,50,90,0.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;background:var(--bg);color:#102a43}
+    header{background:linear-gradient(90deg,var(--accent),#2c3e50);color:#fff;padding:30px 18px;text-align:center}
+    header h1{margin:0;font-size:clamp(20px,3vw,28px)}
+    .container{max-width:900px;margin:28px auto;padding:18px}
+    .card{background:var(--card);padding:22px;border-radius:12px;box-shadow:var(--shadow)}
+    .row{display:flex;gap:18px}
+    .col{flex:1}
+    label{display:block;font-weight:600;margin-bottom:8px;color:#123}
+    input[type="text"], input[type="email"], textarea{width:100%;padding:12px;border:1px solid #e6eef9;border-radius:8px;font-size:15px}
+    textarea{min-height:120px;resize:vertical}
+    .actions{display:flex;gap:12px;align-items:center;margin-top:14px}
+    button{background:var(--accent);color:#fff;border:none;padding:10px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+    button.secondary{background:#304a6a}
+    .socials{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    .social{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#f7fbff;border-radius:10px;border:1px solid rgba(74,144,226,0.08)}
+    .social img{width:28px;height:28px}
+    .note{color:var(--muted);font-size:14px;margin-top:10px}
+    .copy-btn{background:#eef6ff;border:1px solid rgba(74,144,226,0.12);color:var(--accent);padding:8px 10px;border-radius:8px;cursor:pointer}
+    footer{margin:28px 0;text-align:center;color:var(--muted)}
+    @media (max-width:720px){.row{flex-direction:column}}
+  </style>
 </head>
-
 <body>
-<header>
-    <img src="logo.svg" alt="logo">
+  <header>
     <h1>Contato</h1>
-</header>
+    <p style="margin:8px 0 0;opacity:0.9">Entre em contato — redes sociais, email ou mensagem direta</p>
+  </header>
 
-<nav>
-  <a href="index.html">Início</a>
-  <a href="sobre.html">Sobre</a>
-  <a href="conteudo.html">Conteúdo</a>
-  <a href="curiosidade.html">Curiosidades</a>
-  <a href="contato.html">Contato</a>
-</nav>
+  <main class="container">
+    <section class="card">
+      <h2 style="margin-top:0">Fale conosco</h2>
+      
 
-<div class="container">
+      <form onsubmit="event.preventDefault(); alert('Mensagem preparada (exemplo) — implemente backend para envio real.');">
+        <div class="row">
+          <div class="col">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Seu nome" required />
+          </div>
+          <div class="col">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="seu@email.com" required />
+          </div>
+        </div>
 
-<h2>Envie sua mensagem</h2>
+        <div style="margin-top:14px">
+          <label for="assunto">Assunto</label>
+          <input id="assunto" type="text" placeholder="Assunto da mensagem" />
+        </div>
 
-<form>
-<label>Nome:</label>
-<input type="text">
+        <div style="margin-top:14px">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+        </div>
 
-<label>Email:</label>
-<input type="email">
+        <div class="actions">
+          <button type="submit">Enviar mensagem</button>
+          <button type="button" class="secondary" onclick="preencherExemplo()">Preencher exemplo</button>
+        </div>
+      </form>
 
-<label>Mensagem:</label>
-<textarea rows="5"></textarea>
+      <hr style="margin:22px 0;border:none;border-top:1px solid #eef6ff" />
 
-<button>Enviar</button>
-</form>
+      <h3>Contatos diretos</h3>
+      
 
-</div>
+      <div class="socials">
+        <div class="social">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+          <div>
+            <div style="font-weight:700">Instagram</div>
+            <div style="font-size:14px;color:var(--muted)" id="instaHandle">@jropropio__</div>
+          </div>
+          <div style="margin-left:auto">
+            <button class="copy-btn" onclick="copyText('#instaHandle')">Copiar</button>
+          </div>
+        </div>
 
-<footer>© 2025 João Ricardo Portel Brandão</footer>
+        <a class="social" href="mailto:contato@historia.com">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" />
+          <div>
+            <div style="font-weight:700">Email</div>
+            <div style="font-size:14px;color:var(--muted)">jrzindiscord@gmail.com</div>
+          </div>
+        </a>
+
+        <a class="social" href="#" onclick="alert('Coloque o link do seu WhatsApp aqui.');return false;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+          <div>
+            <div style="font-weight:700">WhatsApp</div>
+            <div style="font-size:14px;color:var(--muted)">+55 (18) 991155-8855</div>
+          </div>
+        </a>
+      </div>
+
+      
+    </section>
+
+    <footer>© 2025 - João Ricardo Portel Brandão</footer>
+<footer>Etec Milton Gazzeti</footer
+  </main>
+
+  <script>
+    function copyText(selector){
+      const el = document.querySelector(selector);
+      if(!el) return;
+      const text = el.innerText || el.value;
+      navigator.clipboard?.writeText(text).then(()=>{
+        alert('Copiado: ' + text);
+      }).catch(()=>{
+        alert('Não foi possível copiar automaticamente. Selecione e copie manualmente: ' + text);
+      });
+    }
+    function preencherExemplo(){
+      document.getElementById('nome').value = 'João Ricardo';
+      document.getElementById('email').value = 'jrzindiscord@gmail.com';
+      document.getElementById('assunto').value = 'Sugestão de conteúdo';
+      document.getElementById('mensagem').value = 'Gostaria de sugerir um artigo sobre a história da África antiga.';
+    }
+  </script>
 </body>
 </html>
+
+
